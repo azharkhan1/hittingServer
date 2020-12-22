@@ -39,3 +39,7 @@ function Update() {
     }
 
 }
+
+
+//  USE CORS LIBRARY TO ALLOW CORS POLICY
+// MORGAN TO GET ALL DATA
