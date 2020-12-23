@@ -3,13 +3,13 @@
 function get() {
 
     const Http = new XMLHttpRequest();
-    const url = 'http://192.168.50.177:3000/bulb';
-    Http.open("GET", url);
-    Http.send("Hahahaha");
-
+    const url = 'http://192.168.50.210:3000/bulb';
+    Http.open("POST", url);
+    Http.setRequestHeader("Content-Type", "application/json");
     Http.onreadystatechange = (e) => {
         console.log(Http.responseText)
     }
+    Http.send(JSON.stringify({name:"Azhar", time:"ASDASD"}));
 
 }
 
